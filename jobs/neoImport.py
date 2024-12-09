@@ -25,5 +25,6 @@ class DBImport(Job):
 
         driver.close()
         print('neo import job finished...')
+        register_jobs(DBImport)
 
 register_jobs(DBImport)
